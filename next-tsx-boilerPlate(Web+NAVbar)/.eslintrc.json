@@ -1,0 +1,53 @@
+{
+  "root": true,
+  "extends": [
+    "next/core-web-vitals", // Needed to avoid warning
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "plugin:tailwindcss/recommended"
+  ],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "endOfLine": "auto"
+      }
+    ]
+  },
+
+  "overrides": [
+    {
+      "files": ["**/*.ts", "**/*.tsx"],
+      "plugins": [
+        "@typescript-eslint",
+        "unused-imports",
+        "tailwindcss",
+        "simple-import-sort",
+        "react-hooks"
+      ],
+      "extends": [
+        "plugin:tailwindcss/recommended",
+        "next/core-web-vitals",
+        "plugin:prettier/recommended"
+      ],
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "project": "./tsconfig.json",
+        "sourceType": "module",
+        "ecmaVersion": "latest"
+      },
+      "rules": {
+        "simple-import-sort/imports": "error",
+        "simple-import-sort/exports": "error",
+        "prettier/prettier": [
+          "error",
+          {
+            "singleQuote": true,
+            "endOfLine": "auto"
+          }
+        ]
+      }
+    }
+  ]
+}

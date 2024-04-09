@@ -1,0 +1,49 @@
+/* Pretendard 폰트 추가 */
+@font-face {
+    font-family: "Pretendard";
+    font-style: normal;
+    font-weight: 100;
+    src: url("./pretendard-Light.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Pretendard";
+    font-style: normal;
+    font-weight: normal;
+    src: url("./pretendard-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Pretendard";
+    font-style: normal;
+    font-weight: 500;
+    src: url("./pretendard-Medium.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Pretendard";
+    font-style: normal;
+    font-weight: bold;
+    src: url("./pretendard-Bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Pretendard";
+    font-style: normal;
+    font-weight: bold;
+    src: url("./Pretendard-ExtraBold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Pretendard";
+    font-style: normal;
+    font-weight: bold;
+    src: url("./Pretendard-SemiBold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Pretendard";
+    font-style: normal;
+    font-weight: lighter;
+    src: url("./pretendard-Thin.woff") format("woff");
+}

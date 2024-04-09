@@ -1,0 +1,24 @@
+name: size-label
+on: pull_request_target
+jobs:
+    size-label:
+        permissions:
+            contents: read
+            pull-requests: write
+        runs-on: ubuntu-latest
+        steps:
+            - name: size-label
+              uses: "pascalgn/size-label-action@v0.4.2"
+              env:
+                  GITHUB_TOKEN: "${{ secrets.TOKEN }}"
+                  IGNORED: ".*\n!.gitignore\nyarn.lock\ngenerated/**\npackage-lock.json\n*.lock\n.gitignore"
+              with:
+                  sizes: >
+                      {
+                        "0": "XS",
+                        "10": "S",
+                        "100": "M",
+                        "500": "L",
+                        "1000": "XL",
+                        "2000": "XXL"
+                      }
